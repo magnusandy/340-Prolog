@@ -1,0 +1,114 @@
+Andrew Magnus
+amm215
+11140881
+CMPT 340 - Assignment 5
+
+Problem 3- Testing
+
+?- aunt_of(Aunt, Person).
+false.
+
+?- grandchild_of(GrandChild, Person).
+GrandChild = harry,
+Person = elizabeth ;
+GrandChild = william,
+Person = elizabeth ;
+GrandChild = harry,
+Person = philip ;
+GrandChild = william,
+Person = philip ;
+GrandChild = george,
+Person = charles ;
+GrandChild = charlotte,
+Person = charles ;
+GrandChild = george,
+Person = diana ;
+GrandChild = charlotte,
+Person = diana ;
+false.
+
+?- mother_of(Mother, Child).
+Mother = elizabeth,
+Child = charles ;
+Mother = diana,
+Child = harry ;
+Mother = diana,
+Child = william ;
+Mother = catherine,
+Child = george ;
+Mother = catherine,
+Child = charlotte ;
+false.
+
+?- stepmother_of(StemMom, Child).
+StemMom = camilla,
+Child = harry ;
+StemMom = camilla,
+Child = william ;
+false.
+
+?- nephew_of(Nephew, Person).
+Nephew = george,
+Person = harry ;
+false.
+
+?- mother_in_law_of(MotherInLaw, Person).
+MotherInLaw = elizabeth,
+Person = diana ;
+MotherInLaw = elizabeth,
+Person = camilla ;
+MotherInLaw = diana,
+Person = catherine ;
+false.
+
+?- brother_in_law_of(BroInLaw, Person).
+BroInLaw = harry,
+Person = catherine ;
+false.
+
+?- ancestor_of(Ancestor, Person).
+Ancestor = elizabeth,
+Person = charles ;
+Ancestor = philip,
+Person = charles ;
+Ancestor = diana,
+Person = harry ;
+Ancestor = charles,
+Person = harry ;
+Ancestor = charles,
+Person = william ;
+Ancestor = diana,
+Person = william ;
+Ancestor = william,
+Person = george ;
+Ancestor = catherine,
+Person = george ;
+Ancestor = william,
+Person = charlotte ;
+Ancestor = catherine,
+Person = charlotte ;
+Ancestor = elizabeth,
+Person = harry ;
+Ancestor = philip,
+Person = harry ;
+Ancestor = elizabeth,
+Person = william ;
+Ancestor = philip,
+Person = william ;
+Ancestor = charles,
+Person = george ;
+Ancestor = diana,
+Person = george ;
+Ancestor = elizabeth,
+Person = george ;
+Ancestor = philip,
+Person = george ;
+Ancestor = charles,
+Person = charlotte ;
+Ancestor = diana,
+Person = charlotte ;
+Ancestor = elizabeth,
+Person = charlotte ;
+Ancestor = philip,
+Person = charlotte ;
+false.
